@@ -1,0 +1,1089 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+body{
+  background: #212121;
+
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #8BDB81;
+}
+
+::selection {
+  color:#fff;
+  background:#8BDB81;
+}
+
+nav, #about, #skills,.contact{
+  background: #212121;
+}
+
+nav, .intro,#about, #skills,.contact{
+  width: 100%;
+}
+
+.intro h5,#about,#skills,.lang,.contact{
+  text-align: center;
+  }/* 3F0071 */
+/* <<<<<<<,------------Navigation Bar-------------->>>>> */
+
+nav{
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  justify-content: flex-end;
+  position: relative;
+  -webkit-box-shadow: -1px 3px 7px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 7px -1px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 7px -1px rgba(0,0,0,0.75);
+}
+
+nav ul{
+  margin:0;
+  margin-right: 4rem;
+}
+
+.nav-items{
+  list-style: none;
+  display: inline-block;
+  margin-right: 2rem;
+  padding: 1.47rem 0;
+  position: relative;
+}
+
+nav .nav-items a {
+  text-decoration: none;
+  font-weight: 500;
+  color:white;
+  font-size: 25px;
+  position: sticky;
+  transition: all 0.4s;
+}
+/* #4b009c */
+nav .nav-items a:hover{
+  background: white;
+  color:black;
+  padding: 1.49rem 1rem;
+  margin-bottom: 1rem;
+
+}
+
+nav h3{
+margin-right: auto;
+font-weight: 700;
+margin-left: 1rem;
+font-size: 34px;
+letter-spacing: 3px;
+cursor: pointer;
+}
+
+/* -<<<<<<<<<<<<<--------Media query----------->>>>>>>>>> */
+
+@media screen and (max-width:715px) {
+    nav{
+      height:35rem;
+      width: 100%;
+      padding-right: 25rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      align-items: center;
+      padding-bottom: 1rem;
+      justify-content: space-around;
+    }
+
+    nav h3{
+      margin-left: 3rem;
+      padding-top: 6px;
+      position: absolute;
+      display: flex;
+      font-size: 3rem;
+      top:2.1rem;
+      margin-top: 10px;
+      padding-left: 20.4rem;
+
+    }
+
+    nav ul{
+      margin-top: 7rem;
+      margin-left: 22rem;
+      padding-bottom: 20px;
+      margin-bottom: 1.6rem;
+    }
+    nav .nav-items{
+      display: block;
+      position: relative;
+      width: 34px;
+      top:3rem;
+      padding-left: 0;
+
+    }
+
+    nav .nav-items a{
+      font-size: 2.8em;
+    }
+
+    nav .nav-items a:hover{
+      color: #00FFDD;
+      padding: 0;
+      background: transparent;
+    }
+
+
+    .intro{
+      padding-right: 25rem;
+    }
+
+    .intro h1{
+      margin-bottom: 7rem;
+    }
+
+
+
+    .intro h2 span{
+      position: absolute;
+      bottom: 28rem;
+      padding-left: 1rem;
+    }
+}
+
+
+/* ---<<<<<<<<<<<<<<<<<<Introduction---->>>>>>>>>>>>>>>> */
+
+
+.intro{
+  height: 700px;
+  background-image: url("black.jpg");
+  margin-bottom: 0rem;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.intro h1{
+  margin-left: 90px;
+  letter-spacing: -2px;
+  margin-top: 2.5rem;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  color:#fff;
+  letter-spacing: 1px;
+  font-size: 60px;
+  top: 45px;
+}
+
+.intro h2{
+  font-size: 3rem;
+  margin-left: 87px;
+  margin-top: 45px;
+  text-shadow: 4px -1px 5px rgba(145, 150, 150, 1);
+}
+
+.intro h2 span{
+  font-size: 6rem;
+  color: #FFEFCF;
+}
+
+.intro h5{
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.33);
+  font-size: 2rem;
+  padding-left: 15px;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  line-height: 3rem;
+  font-style: italic;
+  display: block;
+  color: #fff;
+  width: 30%;
+  margin-left: 45px;
+  margin-top: 5rem;
+  position: relative;
+}
+
+
+
+.intro h4{
+  font-style: italic;
+  font-weight: lighter;
+  color: #fff;
+  font-family: "Montserrat";
+  width: 30%;
+  margin-left: 60px;
+  padding-left: 10rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.33);
+}
+
+
+.intro h3{
+  font-family: "Montserrat";
+  font-weight: lighter;
+  margin-top: 4rem;
+  margin-left: 0px;
+  background: #F5F5F5;
+  width: 3%;
+  height: 2rem;
+  overflow: hidden;
+  color: black;
+  text-indent: -99px;
+  font-size: 0;
+  padding: 1.3rem;
+  transition: all 0.6s;
+}
+
+.intro h3:hover{
+  width: 27%;
+  font-size: 2rem;
+  text-indent:0;
+}
+
+@media screen and (min-width:871px) and (max-width:1048px) {
+  .intro h3{
+    width:2%;
+    position: absolute;
+    bottom: 1.6rem;
+
+  }
+  .intro h3:hover{
+    width: 24%;
+    font-size: 1.2rem;
+    text-indent:0;
+  }
+}
+
+@media screen and (min-width:506px) and (max-width:871px){
+  .intro h5{
+    width: 86%;
+  }
+
+  .intro h4{
+    padding-left: 14rem;
+    width: 45%;
+  }
+
+  .intro h3{
+    width:2%;
+    position: absolute;
+    bottom: 1.6rem;
+
+  }
+  .intro h3:hover{
+    width: 75%;
+    font-size: 2.2rem;
+    text-indent:0;
+  }
+}
+
+
+@media screen and (max-width:714px) and (min-width:506px){
+  .intro h3{
+    width:2%;
+    position: absolute;
+    bottom: 1.6rem;
+
+  }
+  .intro h3:hover{
+    width: 45%;
+    font-size: 2.2rem;
+    text-indent:0;
+  }
+
+  .intro h5,h4{
+    font-size: 40px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:506px){
+  .intro h5{
+    width: 130%;
+    font-size: 40px;
+    margin-bottom: 2rem;
+    position: relative;
+    bottom:29px;
+    margin-left: 3rem;
+    display: none;
+
+  }
+
+
+  .intro h3{
+    position: absolute;
+    bottom: 3.6rem;
+    height: 5rem;
+
+  }
+
+  .intro h3:hover{
+    width: 60%;
+    font-size: 42px;
+  }
+}
+
+/* <<<<<--------------ABOUT--------->>>>>>>>>>>>>>> */
+/* #FFEFCF */
+#about{
+  height:38em;
+  position: relative;
+}
+
+.profile h1{
+  font-size: 4rem;
+  color: #FFEFCF;
+  font-family: 'Lato', sans-serif;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+.officeman{
+  height:150px;
+  width: 150px;
+  margin-top: 15px;
+  border-radius: 9px;
+}
+
+.profile h3{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin: 1rem 27%;
+  padding: 1.8rem 2.2rem;
+  border-radius: 6px;
+  line-height: 2.2rem;
+  transition: all 0.6s;
+}
+.profile h3:hover{
+  -webkit-box-shadow: -2px 0px 10px 1px rgba(140,140,140,1);
+-moz-box-shadow: -2px 0px 10px 1px rgba(140,140,140,1);
+box-shadow: -2px 0px 10px 1px rgba(140,140,140,1);
+background: #ffffff;
+color: #000;
+}
+
+
+@media screen and (max-width:1025px){
+  .profile h3{
+    padding: 0.6rem 1rem;
+    margin: 1rem 23%;
+  }
+}
+
+@media screen and (max-width:973px) {
+  .profile h3{
+    padding: 0.4rem 0.8rem;
+    font-size: 17.6px;
+  }
+}
+
+@media screen and (max-width:869px) {
+  .profile h3{
+    font-size: 16.7px;
+  }
+}
+
+@media screen and (max-width:821px) {
+  .profile h3{
+    padding: 0.2rem 0.5rem;
+    margin: 0.7rem 19%;
+    font-size: 16.8px;
+  }
+}
+
+@media screen and (max-width:715px){
+  /* and (min-width: 480px) */
+  .profile h1{
+    font-size: 5rem;
+  }
+  #about{
+    padding:0 13rem;
+  }
+
+  .officeman{
+    height:170px;
+    width: 170px;
+  }
+
+  .profile{
+    margin: 0 -10rem;
+  }
+  .profile h3{
+    font-size: 26px;
+    padding: 0.11rem 0.1rem;
+    margin: 0.6rem 16%;
+    word-spacing: 4px;
+    line-height: 2.4rem;
+  }
+}
+
+
+@media screen and (max-width:608px) and (min-width:481px){
+  #about{
+    height:45rem;
+  }
+}
+
+@media screen and (max-width:480px){
+  #about{
+    padding:0 13rem;
+    padding-bottom: 25rem;
+  }
+
+  .profile{
+    margin: 0 -11.2rem;
+  }
+
+  .profile h1{
+    font-size: 6rem;
+  }
+
+  .officeman{
+    height:200px;
+    width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .profile h3{
+    font-size: 33px;
+    margin: 0.6rem 3%;
+    line-height: 3.8rem;
+    word-spacing: 6px;
+  }
+}
+
+
+/* ---------Skills---------- */
+#skills{
+  height:58em;
+}
+
+#skills h1{
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: #FFEFCF;
+}
+
+#skills p{
+  letter-spacing: 1.5px;
+  font-size: 23px;
+}
+/*----------<<<<<<<<<<< Languages>>>>>>>>>>>>>------------ */
+
+.icon-div{
+  width:79%;
+  height:43em;
+  margin-left: 9rem;
+  margin-top: 6.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lang{
+  width: 250px;
+  height: 300px;
+  background: white;
+
+  border-radius: 5px;
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+.lang-icon{
+  font-size: 10.4rem;
+  margin-top: 1.5rem;
+  color: #000;
+}
+
+.lang h3{
+  color: #000;
+  margin-top:2.8rem;
+  font-size: 32px;
+}
+
+.html5:hover *{
+  color: #F76E11;
+}
+
+
+.css3:hover *{
+  color: #2965f1;
+}
+
+.js:hover *{
+  color: #F0DB4F;
+}
+
+.python:hover *{
+  color: #306998;
+}
+
+.node:hover *{
+  color: #68A063;
+}
+
+.mongo:hover *{
+  color: #3FA037;
+}
+
+.react:hover *{
+  color:#61DBFB;
+}
+
+
+/*<<<<<<<--------- Skills media query------->>>>>>>>> */
+
+@media screen and (max-width:1071px){
+  .icon-div{
+    margin-left: 4rem;
+    padding-bottom: 40rem;
+  }
+
+  .lang{
+      margin-bottom: 2rem;
+  }
+
+  #skills{
+    padding-bottom: 25rem;
+  }
+  #skills p{
+    font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (max-width:715px){
+  #skills{
+    width: 158.5%;
+    padding-bottom: 3rem;
+
+  }
+
+  #skills p{
+    font-size: 1.5rem;
+  }
+
+  .icon-div{
+    padding-bottom: 340px;
+    margin-left: 7.5rem;
+  }
+}
+
+@media screen and (max-width:691px){
+  #skills{
+    width: 160.4%;
+  }
+}
+
+@media screen and (max-width:668px){
+  #skills{
+    width: 162.2%;
+  }
+}
+@media screen and (max-width:661px){
+  #skills{
+    width: 163.9%;
+  }
+  .icon-div{
+    margin-left: 3rem;
+    /* padding-right: 6rem; */
+    padding-bottom: 620px;
+
+  }
+}
+
+@media screen and (max-width:653px){
+
+
+  #skills{
+    width:164.9%;
+  }
+
+  #skills h1{
+    margin-bottom: 3.5rem;
+  }
+  .icon-div{
+    padding-right: 6rem;
+    display: contents;
+
+  }
+}
+
+@media screen and (max-width:638px){
+
+  #skills{
+    width:165.2%;
+  }
+}
+
+@media screen and (min-width:554px) and (max-width:600px){
+  #skills{
+    width: 175%;
+  }
+}
+
+@media screen and (min-width:513px) and (max-width:552px){
+  #skills{
+    width: 179.9%;
+  }
+}
+
+@media screen and (max-width:513px){
+  #skills{
+    /* padding-bottom: 290px; */
+    width: 181%;
+  }
+
+  body{
+    background: #212121
+  }
+
+  nav{
+    background: #1f1c1c;
+  }
+}
+
+@media screen and (max-width:468px){
+  .icon-div{
+    margin-left: 0;
+    padding-right: 11rem;
+  }
+
+  #skills{
+    margin-left: 2.4rem;
+  }
+  #skills p{
+    margin-left: 2rem;
+  }
+
+}
+
+@media screen and (max-width:1428px) and (min-width:1071px){
+  .lang{
+    margin-bottom: 2rem;
+  }
+
+  #skills p{
+    padding-top: 20rem;
+  }
+}
+
+/* <<<<<<-----------Contact Form---------->>>>>>>>> */
+
+.contact{
+  height: 53rem;
+}
+
+.contact-container{
+  height: 45em;
+  margin-top: 4rem;
+  margin-left: 29rem;
+  margin-right: 25rem;
+  background: #916BBF;
+  border-radius: 6px;
+}
+
+.contact-container h1{
+  top:2rem;
+  font-size: 2.7rem;
+  position: relative;
+}
+
+.contact-container h3{
+  top:4rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.9rem;
+  position: relative;
+  text-align: left;
+  margin-left: 2.5rem;
+  letter-spacing: 1px;
+}
+.contact-form{
+  height: 28em;
+  width: 93%;
+  margin-top: 6rem;
+  margin-left: 2.5rem;
+  text-align: left;
+}
+.contact-form #name,#email,textarea{
+  background: #814ebf;
+  border-color: transparent;
+  border-radius: 1.9px;
+  font-size: 1.2rem;
+  padding-left: 1.3rem;
+}
+
+textarea{
+  padding-top: 1.1rem;
+  width:55%;
+  height:16rem;
+  overflow: auto;
+  resize: none;
+}
+::placeholder {
+  color: #3D0000;
+  opacity: 0.5;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+}
+
+
+.contact-form #name,#email{
+  height:3.4rem;
+  width: 12.3rem;
+}
+
+input[type=submit]{
+  background: #916BBF;
+  border: 2px solid #fff;
+  cursor: pointer;
+  height: 3rem;
+  border-radius: 10px;
+  margin-top: 1.8rem;
+  width: 29%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+}
+
+input[type=submit]:hover{
+  color: #916BBF;
+  background: #fff;
+}
+
+@media screen and (max-width:1246px){
+  .contact{
+    position: relative;
+    margin-top: 24rem;
+    height: 54em;
+    display: flex;
+    justify-content: center;
+  }
+  .contact h1{
+    position: absolute;
+    margin-left: 10.4rem;
+  }
+
+  .contact h3{
+    margin-top: 2.5rem;
+  }
+  .contact-container{
+    position: absolute;
+    margin-top:0;
+    padding-left: 2rem;
+    padding-right: 19rem;
+    text-align: center;
+  }
+
+  .contact-form{
+    padding-right: 7rem;
+  }
+
+  input[type=submit]{
+    width: 38%;
+  }
+  textarea{
+    position:relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:837px){
+  .contact-container{
+    margin-left: 24rem;
+  }
+}
+
+@media screen and (max-width:746px) and (min-width: 715px){
+  .contact-container{
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width:715px){
+
+  .contact{
+    display: flex;
+    height: 65em;
+  }
+  .contact h1{
+    font-size: 3.4rem;
+    margin-left: 8rem;
+  }
+
+  .contact h3{
+    font-size: 2.7rem;
+    margin-top: 6rem;
+  }
+
+  .contact-container{
+    margin-left: 60rem;
+    padding-right: 6rem;
+    width: 80%;
+    height: 60rem;
+    position: absolute;
+  }
+
+  .contact-form #name,#email,textarea{
+    font-size: 2rem;
+    padding-left: 1.3rem;
+  }
+
+  textarea{
+    padding-top: 1.1rem;
+    width:90%;
+    height:16rem;
+    overflow: auto;
+    resize: none;
+  }
+  ::placeholder {
+    color: #3D0000;
+    opacity: 0.5;
+    letter-spacing: 1.2px;
+    font-size: 2rem;
+  }
+
+
+  .contact-form #name,#email{
+    height:6.4rem;
+    width: 24.3rem;
+  }
+
+  input[type=submit]{
+    margin-top: 4.7rem;
+    width: 38%;
+    height: 4.2rem;
+    font-size: 2rem;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 613px){
+  .contact-container{
+    margin-left: 50rem;
+    padding-right: 10rem;
+  }
+
+  textarea{
+    width: 105%;
+  }
+
+}
+
+@media screen and (max-width: 526px){
+  .contact-container{
+    padding-right: 19rem;
+    margin-left: 52rem;
+  }
+
+  textarea{
+    width: 140%;
+  }
+}
+
+@media screen and (max-width:468px){
+  .contact{
+    margin-top: 42rem;
+    margin-left: -2.2rem;
+    width: 110%;
+    height: 76em;
+  }
+
+  .contact-container{
+    padding-bottom: 9rem;
+  }
+
+  textarea{
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width:387px){
+  .contact{
+    height: 86em;
+  }
+  .contact h3{
+    font-size: 3.5rem;
+    margin-top: 11rem;
+  }
+  .contact-container{
+    padding-bottom: 22rem;
+  }
+  .contact h1{
+    font-size: 5rem;
+    margin-left: 2.3rem;
+  }
+
+  .contact-form #name,#email{
+    height:8.4rem;
+    width: 27.3rem;
+  }
+
+  textarea{
+    width: 168%;
+  }
+
+  input[type=submit]{
+    height: 7rem;
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width:312px){
+  .contact{
+    margin-top: 102rem;
+  }
+  .contact-container{
+    padding-right: 23rem;
+    margin-left: 54rem;
+  }
+}
+
+/* <<<------Footer----->>>>>>>> */
+
+.footer{
+  background:#fff;
+  height:10em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p{
+  color: black;
+  position: absolute;
+  margin-top: 2.4rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+.footer p:hover{
+  text-decoration: underline;
+  text-underline-offset: 2.2px;
+}
+
+.footer .socials{
+  margin-bottom: 1rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 50%;
+}
+.footer .socials i{
+  color: black;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  cursor:pointer;
+
+}
+
+.footer .socials i:hover{
+  color:  #916BBF;
+}
+
+@media screen and (max-width:715px){
+  .footer{
+    width: 158.4%;
+    padding-bottom: 4rem;
+  }
+  .footer .socials{
+      width: 70%;
+  }
+
+  .footer .socials i{
+    font-size: 2rem;
+  }
+
+  .footer p{
+    font-size: 1.4rem;
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width:651px){
+  .footer{
+    width: 165%;
+  }
+}
+
+@media screen and (max-width:651px){
+  .footer{
+    width: 165%;
+  }
+}
+
+@media screen and (max-width:595px){
+  .footer{
+    width: 175%;
+  }
+}
+@media screen and (max-width:548px){
+  .footer{
+    width: 180%;
+  }
+}
+
+@media screen and (max-width:477px){
+  .footer{
+    width: 187.4%;
+  }
+}
+
+@media screen and (max-width:434px){
+  .footer{
+    width: 196%;
+  }
+  .footer .socials i{
+    font-size: 2.3rem;
+    padding-left: 1.3rem;
+  }
+  .footer p{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:416px){
+  .footer{
+    width:201%;
+  }
+}
+
+@media screen and (max-width: 391px){
+  .footer{
+    width: 207%;
+  }
+
+  .footer p{
+    width: 130%;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .footer{
+    width:216%;
+  }
+}
+
+@media screen and (max-width: 337px){
+  .footer{
+    width:224%;
+  }
+}
+
+@media screen and (max-width: 323px){
+  .footer{
+    width:229%;
+  }
+}
